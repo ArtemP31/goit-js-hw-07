@@ -13,3 +13,11 @@ body {
   line-height: 1.5;
   
 }
+
+.boxes{
+  display: flex;
+  align-items: center;
+}
+.boxes>div{
+  margin-right: 5px;
+}
