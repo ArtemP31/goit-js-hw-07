@@ -42,7 +42,6 @@ inputEl.addEventListener('input', () => {
         createBoxes(count);
         inputEl.value = '';
         console.log(inputEl.value);
-        
       } else {
         inputEl.value ='';
       }
