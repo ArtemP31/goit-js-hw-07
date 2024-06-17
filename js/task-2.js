@@ -27,16 +27,26 @@ const images = [
 
 const listEl = document.querySelector('.gallery');
 
-const imagesArray = images.map(element => {
-  const firstListImg = document.createElement('li');
-  const firstImg = document.createElement('img');
-  firstListImg.append(firstImg);
-  firstImg.style.width = '320px';
-  firstImg.style.height = '320px';
-  firstImg.setAttribute('src', element.url);
-  firstImg.setAttribute('alt', element.alt);
-  return firstListImg;
-});
 
-listEl.append(...imagesArray);
+function creatImg(image){
+  return image.map(({url, alt}) => `
+  <li class="list-img">
+    <img class="list-item-img" src="${url}" alt="${alt}" width="360" height="300">
+  </li>`).join("");
+}
+
+listEl.insertAdjacentHTML('afterbegin', creatImg(images));
+
+// const imagesArray = images.map(element => {
+//   const firstListImg = document.createElement('li');
+//   const firstImg = document.createElement('img');
+//   firstListImg.append(firstImg);
+//   firstImg.style.width = '360px';
+//   firstImg.style.height = '300px';
+//   firstImg.setAttribute('src', element.url);
+//   firstImg.setAttribute('alt', element.alt);
+//   return firstListImg;
+// });
+
+// listEl.append(...imagesArray);
 

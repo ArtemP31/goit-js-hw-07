@@ -18,7 +18,6 @@ function createBoxes(amount) {
     newBox.style.width = widthBox + 'px';
     newBox.style.height = heightBox + 'px';
     newBox.style.backgroundColor = getRandomHexColor();
-    newBox.style.borderRadius = '5px';
     boxesEl.append(newBox);
     widthBox += 10;
     heightBox += 10;

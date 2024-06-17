@@ -1,5 +1,7 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -11,13 +13,242 @@ body {
   background-color: #fafafa;
   color: #212121;
   line-height: 1.5;
-  
+}
+
+
+.item {
+  list-style: none;
+  background-color: #f6f6fe;
+  max-width: 392px;
+  margin: 24px auto 24px auto;
+  border: 1px solid #f6f6fe;
+  border-radius: 8px;
+}
+
+.categories-text {
+  font-style: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
+  margin-top: 16px;
+  margin-left: 16px;
+  margin-bottom: 16px;
+  line-height: 32px;
+}
+.list-categories {
+  list-style: none;
+  padding: 0px 16px 16px 16px;
+}
+
+.list-categories > li {
+  border: 1px solid #808080;
+  border-radius: 4px;
+  padding: 8px 315px 8px 16px;
+}
+.list-categories > li:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.gallery {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+}
+
+.list-img {
+  list-style: none;
+  flex-basis: calc((100% - 48px) / 3);
+  max-width: 360px;
+}
+
+.list-item-img {
+  display: block;
+  max-width: 100%;
+}
+/* task - 3 */
+
+.input-style {
+  margin-top: 20px;
+  margin-left: 50px;
+  margin-bottom: 16px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 360px;
+  height: 40px;
+  align-items: center;
+  padding-left: 16px;
+}
+
+.input-style::placeholder {
+  color: #2e2f42;
+}
+
+.output-style {
+  margin-left: 50px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+/*  task-4 */
+
+.login-form > label,
+label > input {
+  display: block;
+}
+
+.login-form {
+  width: 408px;
+  height: 256px;
+  padding: 24px;
+}
+
+.form-input {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  height: 40px;
+  margin-top: 8px;
+  width: 100%;
+  padding-left: 15px;
+  outline: transparent;
+}
+
+.form-input:hover,
+.form-input:focus {
+  border-color: #000;
+}
+
+.form-label {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  margin-bottom: 8px;
+}
+
+.form-but {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  border-radius: 8px;
+  padding: 8px 16px;
+  background: #4e75ff;
+  border: none;
+  cursor: pointer;
+}
+
+.form-but:hover,
+.form-but:focus {
+  background: #6c8cff;
+}
+
+.widget {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+.widget > p {
+  margin-bottom: 16px;
+}
+
+.widget > button {
+  border-radius: 8px;
+  padding: 8px 16px;
+  border: none;
+  background: #4e75ff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #fff;
+}
+
+.widget > button:hover, .widget > button:focus{
+  background: #6c8cff;
+}
+
+.input-container{
+  margin-bottom: 15px;
+  display: flex;
+  gap: 16px;
+}
+
+
+.input-container > input{
+  border: 1px solid #808080;
+border-radius: 8px;
+text-align: center;
+width: 150px;
+height: 40px;
+outline: transparent;
+}
+
+.input-container >input:hover,
+.input-container >input:focus {
+  border-color: #000;
+}
+
+.input-container >input::-webkit-outer-spin-button,
+.input-container >input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+
+
+.input-container > button{
+  border-radius: 8px;
+padding: 8px 16px;
+background: #4e75ff;
+border: none;
+font-weight: 500;
+font-size: 16px;
+line-height: 150%;
+letter-spacing: 0.04em;
+color: #fff;
+}
+
+.input-container >.destroy{
+  background: #ff4e4e;
+}
+
+.input-container > button:hover,
+.input-container > button:focus{
+  background: #6c8cff;
+}
+
+.input-container >.destroy:hover,
+.input-container >.destroy:focus{
+  background: #ff7070;
 }
 
 .boxes{
-  display: flex;
-  align-items: center;
-}
-.boxes>div{
-  margin-right: 5px;
+ display: flex;
+ gap: 44px;
 }
