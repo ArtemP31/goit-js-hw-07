@@ -10,6 +10,7 @@ const formSubmit = event => {
     };
     if(formEl.email.value === '' || formEl.password.value === '' ){
         alert("All form fields must be filled in");
+        return;
     }
     console.log(information);
     event.currentTarget.reset();
