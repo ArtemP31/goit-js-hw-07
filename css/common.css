@@ -127,6 +127,7 @@ label > input {
   width: 100%;
   padding-left: 15px;
   outline: transparent;
+  
 }
 
 .form-input:hover,
@@ -252,3 +253,4 @@ color: #fff;
  display: flex;
  gap: 44px;
 }
+
